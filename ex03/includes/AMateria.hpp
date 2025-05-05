@@ -6,13 +6,14 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:04:28 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/02 20:05:21 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/05 15:05:04 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include <iostream>
 # include <iomanip>
 # include <string>
+# include "ICharacter.hpp"
 
 class AMateria
 {
@@ -23,5 +24,5 @@ class AMateria
 //[...]
 		std::string const & getType() const; //Returns the materia type
 		virtual AMateria* clone() const = 0;
-//		virtual void use(ICharacter& target);
+		virtual void use(ICharacter& target);
 };
