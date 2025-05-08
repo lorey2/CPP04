@@ -1,53 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Character.cpp                                      :+:      :+:    :+:   */
+/*   IMateriaSource.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/08 20:52:06 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/08 21:00:57 by lorey            ###   LAUSANNE.ch       */
+/*   Created: 2025/05/08 19:46:41 by lorey             #+#    #+#             */
+/*   Updated: 2025/05/08 20:06:16 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Character.hpp"
+#ifndef I_MATERIA_SOURCE_HPP
+# define I_MATERIA_SOURCE_HPP
 
-Character::Character()
+#include "AMateria.hpp"
+class IMateriaSource
 {
+	public:
+	virtual ~IMateriaSource() {}
+	virtual void learnMateria(AMateria*) = 0;
+	virtual AMateria* createMateria(std::string const & type) = 0;
+};
 
-}
-
-Character::Character(const Character &character)
-{
-
-}
-
-Character& Character ::operator=(const Character &character)
-{
-	
-}
-
-Character::~Character()
-{
-
-}
-
-const std::string& Character::getName() const
-{
-
-}
-
-void Character::equip(AMateria *m)
-{
-
-}
-
-void Character::unequip(int idx)
-{
-
-}
-
-void Character::use(int idx, ICharacter& target)
-{
-
-}
+#endif

@@ -1,53 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Character.cpp                                      :+:      :+:    :+:   */
+/*   MateriaSource.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/08 20:52:06 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/08 21:00:57 by lorey            ###   LAUSANNE.ch       */
+/*   Created: 2025/05/08 21:31:51 by lorey             #+#    #+#             */
+/*   Updated: 2025/05/08 21:38:05 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Character.hpp"
+#include "MateriaSource.hpp"
 
-Character::Character()
+MateriaSource::MateriaSource()
 {
 
 }
 
-Character::Character(const Character &character)
+MateriaSource::MateriaSource(const MateriaSource &materia_source)
 {
 
 }
 
-Character& Character ::operator=(const Character &character)
-{
-	
-}
-
-Character::~Character()
+MateriaSource::~MateriaSource()
 {
 
 }
 
-const std::string& Character::getName() const
-{
-
-}
-
-void Character::equip(AMateria *m)
-{
-
-}
-
-void Character::unequip(int idx)
-{
-
-}
-
-void Character::use(int idx, ICharacter& target)
+MateriaSource& MateriaSource::operator=(const MateriaSource &materia_source)
 {
 
 }

@@ -6,42 +6,48 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:07:07 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/02 20:28:17 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/08 21:28:38 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 
-Animal::Animal()
+Cure::Cure()
 {
-	std::cout << "Animal Default constructor called" << std::endl;
-	this->type = "Animal";
+
 }
 
-Animal::~Animal(void)
+Cure::Cure(std::string const &type)
 {
-	std::cout << "Animal Destructor called" << std::endl;
+
 }
 
-Animal::Animal(const Animal &animal)
+Cure::~Cure()
 {
-	std::cout << "Animal Copy constructor called" << std::endl;
-	this->type = animal.type;
+
 }
 
-Animal& Animal::operator=(const Animal &animal)
+Cure::Cure(const Cure &cure)
 {
-	std::cout << "Animal Copy assignment operator called" << std::endl;
-	if (this == &animal)
-	{
-		std::cout << "self assignement..." << std::endl;
-		return *this;
-	}
-	this->type = animal.type;
-    return *this;
+
 }
 
-std::string Animal::getType() const
+Cure& Cure::operator=(const Cure &cure)
 {
-	return this->type;
+
+}
+
+std::string const &Cure::getType() const
+{
+
+}
+
+Cure* Cure::clone() const
+{
+
+}
+
+void Cure::use(ICharacter& target)
+{
+
 }

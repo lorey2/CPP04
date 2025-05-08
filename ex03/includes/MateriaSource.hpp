@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Ice.hpp                                            :+:      :+:    :+:   */
+/*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/02 20:07:58 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/08 21:31:41 by lorey            ###   LAUSANNE.ch       */
+/*   Created: 2025/05/08 19:46:47 by lorey             #+#    #+#             */
+/*   Updated: 2025/05/08 21:38:02 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ICE_HPP
-# define ICE_HPP
+#ifndef MATERIA_SOURCE_HPP
+# define MATERIA_SOURCE_HPP
 
+#include "IMateriaSource.hpp"
 #include "AMateria.hpp"
-# include <iostream>
-# include <iomanip>
-# include <string>
 
-class Ice : public virtual AMateria
+class MateriaSource : public virtual IMateriaSource
 {
-	protected:
-//[...]
 	public:
-		Ice();
-		Ice(std::string const & type);
-		Ice(const Ice &ice);
-		Ice& operator=(const Ice &ice);
-		~Ice();
-//[...]
-		std::string const & getType() const; //Returns the materia type
-		Ice* clone() const = 0;
-		void use(ICharacter& target);
+		MateriaSource();
+		MateriaSource(const MateriaSource &materia_source);
+		~MateriaSource() {}
+		MateriaSource& operator=(const MateriaSource &materia_source);
+		void learnMateria(AMateria*) = 0;
+		AMateria* createMateria(std::string const & type) = 0;
 };
 
-
-#endif //  CURE_HPP
+#endif

@@ -11,7 +11,7 @@ SRC			=	main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp Brain.c
 				
 OBJ			=	$(addprefix $(OBJ_DIR), $(SRC:.cpp=.o))
 
-CC				=	g++
+CC				=	c++
 CFLAGS			=	-Wall -Wextra -Werror -Wpedantic -std=c++98
 
 $(OBJ_DIR)%.o:	$(SRC_DIR)%.cpp
