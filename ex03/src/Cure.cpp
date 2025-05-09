@@ -6,7 +6,7 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:07:07 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/09 02:23:06 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/09 13:34:44 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Cure::Cure()
 {
 	this->mat_type = "cure";
+	std::cout << this->mat_type << " created" << std::endl;
 }
 
 Cure::~Cure()

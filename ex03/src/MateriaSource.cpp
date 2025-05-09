@@ -6,7 +6,7 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 21:31:51 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/09 02:29:15 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/09 13:36:32 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ MateriaSource::MateriaSource()
 	this->ma_inventory[1] = NULL;
 	this->ma_inventory[2] = NULL;
 	this->ma_inventory[3] = NULL;
+	std::cout << "Materia source created (default)" << std::endl;
 }
 
 MateriaSource::MateriaSource(const MateriaSource &materia_source)
@@ -58,8 +59,8 @@ void	MateriaSource::learnMateria(AMateria* materia)
 		if(!this->ma_inventory[i])
 		{
 			ma_inventory[i] = materia;
+	 		std::cout << "materia " << materia->getType() << " learned" << std::endl;
 			return ;
-	 		std::cout << "materia learned" << std::endl;
 		}
 	}
 }

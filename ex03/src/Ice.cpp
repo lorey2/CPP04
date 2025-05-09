@@ -6,7 +6,7 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 21:28:45 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/09 02:27:57 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/09 13:35:30 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Ice::Ice()
 {
 	this->mat_type = "ice";
+	std::cout << this->mat_type << " created" << std::endl;
 }
 
 Ice::~Ice()

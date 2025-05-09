@@ -6,7 +6,7 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 13:59:51 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/09 01:49:48 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/09 13:07:06 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ class ICharacter
 {
 protected:
 	std::string name;
+	AMateria *inventory[4];
+	AMateria *unequiped_materia[100];
 public:
 	virtual ~ICharacter() {}
 	virtual std::string const & getName() const = 0;
