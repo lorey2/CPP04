@@ -6,7 +6,7 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 01:59:45 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/02 16:22:08 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/09 13:43:20 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,9 @@ void	draw_separation(void)
 				<< "\n\n"
 				<<std::endl;
 }
+
+//the difference between animal and wrong animal is the virtual in makeSound
+//with polymorphism if no virtual, the parent functions will be called
 
 int main()
 {

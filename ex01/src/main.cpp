@@ -6,7 +6,7 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 01:59:45 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/02 18:34:03 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/09 13:50:05 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ void	animal_array(void)
 		else
 			animal[i] = new(Dog);
 	}
+	draw_separation();
 	for(int i = 0; i < 4; i++)
 		delete(animal[i]);
 }
