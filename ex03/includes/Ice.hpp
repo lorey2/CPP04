@@ -6,7 +6,7 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:07:58 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/08 21:31:41 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/09 01:20:47 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,12 @@ class Ice : public virtual AMateria
 //[...]
 	public:
 		Ice();
-		Ice(std::string const & type);
 		Ice(const Ice &ice);
 		Ice& operator=(const Ice &ice);
 		~Ice();
 //[...]
 		std::string const & getType() const; //Returns the materia type
-		Ice* clone() const = 0;
+		Ice* clone() const;
 		void use(ICharacter& target);
 };
 

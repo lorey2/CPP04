@@ -6,7 +6,7 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:14:47 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/08 20:31:10 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/09 01:49:40 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,11 @@
 
 class Character : virtual public ICharacter
 {
+	private:
+		AMateria *inventory[4];
 	public:
 		Character();
+		Character(std::string name);
 		Character(const Character &character);
 		Character& operator=(const Character &character);
 		~Character();

@@ -6,7 +6,7 @@
 /*   By: lorey <lorey@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 13:59:51 by lorey             #+#    #+#             */
-/*   Updated: 2025/05/08 20:17:44 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/05/09 01:49:48 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,12 @@
 #include <string>
 
 class AMateria;
+class Materia;
 
 class ICharacter
 {
+protected:
+	std::string name;
 public:
 	virtual ~ICharacter() {}
 	virtual std::string const & getName() const = 0;
